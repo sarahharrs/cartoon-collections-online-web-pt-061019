@@ -1,4 +1,14 @@
-def roll_call_dwarves# code an argument here
+def roll_call_dwarves(array)
+  array = ["Doc", "Dopey", "Bashful", "Grumpy"]
+  i = 0
+	collect = []
+	while i < array.length
+  collect << yield(array[i])
+   i+=1
+   end
+	collect
+	end
+  
   # Your code here
 end
 
